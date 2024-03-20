@@ -37,7 +37,6 @@ img {
 
 .full-screen {
   min-height: 100vh;
-  height: -webkit-fill-available;
 }
 
 body.dark-body {
@@ -51,8 +50,7 @@ body.dark-body {
 
 .page-scroll {
   overflow-y: scroll;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
 }
 .page-scroll:after {
   content: "";
@@ -454,10 +452,10 @@ outline: none;
     height: 655px;
     z-index: -1;
 }
-/* 
+
 .home-banner .page-content .v-center-box {
   height: calc(100vh - 100px);
-} */
+}
 .home-user-avtar{
   display: flex;
   align-items: center;
