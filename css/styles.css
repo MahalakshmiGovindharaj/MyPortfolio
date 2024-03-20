@@ -51,8 +51,8 @@ body.dark-body {
 
 .page-scroll {
   overflow-y: scroll;
-  height: 100vh;
-  height: -webkit-fill-available;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 .page-scroll:after {
   content: "";
@@ -82,11 +82,6 @@ body.dark-body {
 @media(max-width: 991px) {
   .js .page {
     overflow-y: auto;
-  }
-  .page-scroll {
-    overflow-y: scroll;
-    height: 100vh;
-    height: -webkit-fill-available;
   }
   .page-content {
     padding: 90px 10px 30px;
@@ -459,11 +454,10 @@ outline: none;
     height: 655px;
     z-index: -1;
 }
-
+/* 
 .home-banner .page-content .v-center-box {
-  min-height: calc(100vh - 100px);
-  height: -webkit-fill-available;
-}
+  height: calc(100vh - 100px);
+} */
 .home-user-avtar{
   display: flex;
   align-items: center;
