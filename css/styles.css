@@ -12,9 +12,6 @@
   background-color: #0099ff;
   color: #fff;
 }
-html{
-  height: -webkit-fill-available;
-}
 .theme-color {
   color: #FFC815;
 }
@@ -23,9 +20,7 @@ html{
 .theme-bg {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
-html{
-  min-height: calc(var(--vh) * 100);
-}
+
 body {
   font-family: "Jost", sans-serif;
   font-size: 18px;
@@ -53,6 +48,7 @@ body.dark-body {
 .page-scroll {
   overflow-y: scroll;
   height: 100vh;
+  min-height: 100%;
 }
 .page-scroll:after {
   content: "";
@@ -82,10 +78,8 @@ body.dark-body {
 @media(max-width: 991px) {
   .js .page {
     overflow-y: auto;
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
+    min-height: calc(var(--vh) * 100);
+
   }
   .page-content {
     padding: 90px 10px 30px;
@@ -461,7 +455,7 @@ outline: none;
 }
 
 .home-banner .page-content .v-center-box {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 .home-user-avtar{
   display: flex;
