@@ -50,7 +50,8 @@ body.dark-body {
 
 .page-scroll {
   overflow-y: scroll;
-  height: 100vh;
+ height: 100vh;
+ 
 }
 .page-scroll:after {
   content: "";
