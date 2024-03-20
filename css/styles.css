@@ -20,7 +20,9 @@
 .theme-bg {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
-
+html{
+  min-height: calc(var(--vh) * 100);
+}
 body {
   font-family: "Jost", sans-serif;
   font-size: 18px;
@@ -78,11 +80,15 @@ body.dark-body {
 @media(max-width: 991px) {
   .js .page {
     overflow-y: auto;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   }
-
   .page-content {
     padding: 90px 10px 30px;
   }
+  
 }
 
 @media(max-width: 767px) {
