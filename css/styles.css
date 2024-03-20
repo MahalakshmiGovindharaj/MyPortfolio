@@ -12,6 +12,9 @@
   background-color: #0099ff;
   color: #fff;
 }
+html{
+  height: -webkit-fill-available;
+}
 .theme-color {
   color: #FFC815;
 }
@@ -48,7 +51,6 @@ body.dark-body {
 .page-scroll {
   overflow-y: scroll;
   height: 100vh;
-  min-height: 100%;
 }
 .page-scroll:after {
   content: "";
@@ -78,13 +80,10 @@ body.dark-body {
 @media(max-width: 991px) {
   .js .page {
     overflow-y: auto;
-    min-height: calc(var(--vh) * 100);
-
   }
   .page-content {
     padding: 90px 10px 30px;
   }
-  
 }
 
 @media(max-width: 767px) {
@@ -455,7 +454,7 @@ outline: none;
 }
 
 .home-banner .page-content .v-center-box {
-  min-height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
 }
 .home-user-avtar{
   display: flex;
