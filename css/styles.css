@@ -26,6 +26,12 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #605561;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
 }
 
 img {
