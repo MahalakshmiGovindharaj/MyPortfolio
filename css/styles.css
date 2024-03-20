@@ -452,9 +452,9 @@ outline: none;
     z-index: -1;
 }
 
-.home-banner .page-content .v-center-box {
+/* .home-banner .page-content .v-center-box {
   min-height: calc(100vh - 100px);
-}
+} */
 .home-user-avtar{
   display: flex;
   align-items: center;
