@@ -12,6 +12,9 @@
   background-color: #0099ff;
   color: #fff;
 }
+html{
+  height: -webkit-fill-available;
+}
 .theme-color {
   color: #FFC815;
 }
@@ -34,6 +37,7 @@ img {
 
 .full-screen {
   min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 body.dark-body {
@@ -48,7 +52,7 @@ body.dark-body {
 .page-scroll {
   overflow-y: scroll;
   height: 100vh;
-  min-height: 100%;
+  height: -webkit-fill-available;
 }
 .page-scroll:after {
   content: "";
@@ -79,7 +83,11 @@ body.dark-body {
   .js .page {
     overflow-y: auto;
   }
-
+  .page-scroll {
+    overflow-y: scroll;
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
   .page-content {
     padding: 90px 10px 30px;
   }
@@ -452,9 +460,10 @@ outline: none;
     z-index: -1;
 }
 
-/* .home-banner .page-content .v-center-box {
+.home-banner .page-content .v-center-box {
   min-height: calc(100vh - 100px);
-} */
+  height: -webkit-fill-available;
+}
 .home-user-avtar{
   display: flex;
   align-items: center;
