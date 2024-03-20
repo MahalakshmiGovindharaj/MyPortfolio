@@ -95,6 +95,8 @@
     ALX.mTypeIt();
   });
 
+
+
 })(jQuery);
 
 

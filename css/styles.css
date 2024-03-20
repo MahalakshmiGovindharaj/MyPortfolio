@@ -77,13 +77,11 @@ body.dark-body {
 @media(max-width: 991px) {
   .js .page {
     overflow-y: auto;
-    min-height: calc(var(--vh) * 100);
-
   }
+
   .page-content {
     padding: 90px 10px 30px;
   }
-  
 }
 
 @media(max-width: 767px) {
@@ -454,7 +452,7 @@ outline: none;
 }
 
 .home-banner .page-content .v-center-box {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 .home-user-avtar{
   display: flex;

@@ -100,7 +100,7 @@
 
 	// toggle menu fn
 	function toggleMenu() {
-		//console.log(isMenuOpen);
+		console.log(isMenuOpen);
 		if (isMenuOpen) {
 			closeMenu();
 		} else {
