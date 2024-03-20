@@ -48,7 +48,6 @@ body.dark-body {
 .page-scroll {
   overflow-y: scroll;
   height: 100vh;
-  min-height: 100%;
 }
 .page-scroll:after {
   content: "";
@@ -455,7 +454,7 @@ outline: none;
 }
 
 .home-banner .page-content .v-center-box {
-  min-height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
 }
 .home-user-avtar{
   display: flex;
