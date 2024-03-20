@@ -100,9 +100,9 @@
 
 	// toggle menu fn
 	function toggleMenu() {
-		console.log(isMenuOpen);
 		if (isMenuOpen) {
 			closeMenu();
+			$(window).height($(document).height());
 		} else {
 			openMenu();
 			isMenuOpen = true;
