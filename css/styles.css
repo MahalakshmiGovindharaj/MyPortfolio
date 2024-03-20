@@ -48,6 +48,7 @@ body.dark-body {
 .page-scroll {
   overflow-y: scroll;
   height: 100vh;
+  min-height: 100%;
 }
 .page-scroll:after {
   content: "";
