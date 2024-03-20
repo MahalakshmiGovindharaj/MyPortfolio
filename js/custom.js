@@ -94,9 +94,7 @@
 
     ALX.mTypeIt();
   });
-
-
-
+  
 })(jQuery);
 
 
