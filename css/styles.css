@@ -677,16 +677,6 @@ outline: none;
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-.
-
-@media(max-width: 991px) {
-  
-  }
-
-  @media(max-width: 767px) {
-    
-}
-
     /*============================== Resume box ================================*/
     .resume-row {
       position: relative;
