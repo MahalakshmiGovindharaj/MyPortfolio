@@ -441,7 +441,7 @@ outline: none;
 .home-banner {
   background: #fff;
 }
-.home-banner:before, .resume-section:before, .about-section:before, .portfolio-section:before {
+/* .home-banner:before{
     content: '';
     background-image: url(../images/banner-right.png);
     background-repeat: no-repeat;
@@ -452,8 +452,9 @@ outline: none;
     height: 464px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-}
-.home-banner:after, .resume-section:after, .about-section:after, .portfolio-section:after {
+    z-index: 999;
+} */
+.home-banner:after{
     content: '';
     background-image: url(../images/banner-left.png);
     background-repeat: no-repeat;
