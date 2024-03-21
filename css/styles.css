@@ -86,6 +86,9 @@ body.dark-body {
   .js .page {
     overflow-y: auto;
   }
+  .page-scroll:after{
+    width: 0px;
+  }
 
   .page-content {
     padding: 90px 10px 30px;
