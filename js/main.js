@@ -100,9 +100,9 @@
 
 	// toggle menu fn
 	function toggleMenu() {
+		//console.log(isMenuOpen);
 		if (isMenuOpen) {
 			closeMenu();
-			$(window).height($(document).height());
 		} else {
 			openMenu();
 			isMenuOpen = true;
@@ -138,12 +138,15 @@
 		futurePage.style.WebkitTransform = 'translate3d(0, 0, 0)';
 		futurePage.style.transform = 'translate3d(0, 0, 0)';
 		futurePage.style.opacity = 1;
+		
 
 		onEndTransition(futurePage, function () {
 			// close menu..
 			classie.remove(menuCtrl, 'menu-button--open');
 			classie.remove(nav, 'pages-nav--open');
 			classie.remove(stack, 'pages-stack--open');
+
+			
 			
 			// reorganize stack
 			// buildStack();

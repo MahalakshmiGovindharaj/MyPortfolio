@@ -26,26 +26,25 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #605561;
-  min-height: 100vh;
+  min-height: 100svh;
   /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  /* min-height: -webkit-fill-available; */
 }
-html {
+/* html {
   height: -webkit-fill-available;
-}
+} */
 
 img {
   max-width: 100%;
 }
 
 .full-screen {
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 body.dark-body {
   background-color: #111;
 }
-
 
 /*---------------------------------
   Scroll Auto
@@ -53,7 +52,7 @@ body.dark-body {
 
 .page-scroll {
   overflow-y: scroll;
-  height: 100vh;
+  height: 100svh;
 }
 .page-scroll:after {
   content: "";
@@ -93,6 +92,9 @@ body.dark-body {
 @media(max-width: 767px) {
   .page-content {
     padding: 90px 10px 30;
+  }
+  .lottie{
+    display: none;
   }
 }
 
